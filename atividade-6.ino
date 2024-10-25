@@ -1,25 +1,14 @@
-
-int tempo = 0;
-
+// C++ code
+//
 void setup()
 {
-  pinMode(13, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-
-  tempo = 1000;
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);
-  delay(tempo); 
-  digitalWrite(13, LOW);
-  digitalWrite(11, HIGH);
-  delay(tempo); 
-  digitalWrite(11, LOW);
-  delay(tempo); 
-  digitalWrite(12, HIGH);
-  delay(tempo); 
-  digitalWrite(12, LOW);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
 }
